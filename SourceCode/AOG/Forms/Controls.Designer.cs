@@ -1070,7 +1070,7 @@ namespace AOG
         #region File Menu
 
         //File drop down items
-
+        
         private void flagByLatLonToolStripMenuItem_Click(object sender, EventArgs e)
         {
             using (var form = new FormEnterFlag(this))
@@ -1147,6 +1147,13 @@ namespace AOG
             nozzleAppToolStripMenuItem.Checked = Settings.Vehicle.setApp_isNozzleApp;
 
             PanelsAndOGLSize();
+        }
+        private void agShareToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var form = new FormAgShareSettings(new AgShareClient(Settings.User.AgShareServer, Settings.User.AgShareApiKey), Settings.User);
+            {
+                form.ShowDialog(this);
+            }
         }
 
         private void kioskModeToolStriPGN_Click(object sender, EventArgs e)

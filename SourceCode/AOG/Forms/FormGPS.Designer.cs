@@ -1,4 +1,4 @@
-﻿namespace AOG
+namespace AOG
 {
     partial class FormGPS
     {
@@ -194,6 +194,7 @@
             this.btnSprayGalPerMinActual = new System.Windows.Forms.Button();
             this.lblPWM_Nozz = new System.Windows.Forms.Label();
             this.lblFlowHz_Nozz = new System.Windows.Forms.Label();
+            this.agShareToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.contextMenuStripFlag.SuspendLayout();
             this.statusStripLeft.SuspendLayout();
@@ -236,7 +237,8 @@
             this.toolStripSeparator4,
             this.kioskModeToolStrip,
             this.resetALLToolStripMenuItem,
-            this.nozzleAppToolStripMenuItem});
+            this.nozzleAppToolStripMenuItem,
+            this.agShareToolStripMenuItem});
             this.fileToolStripMenuItem.Font = new System.Drawing.Font("Tahoma", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fileToolStripMenuItem.Image = global::AOG.Properties.Resources.fileMenu;
             this.fileToolStripMenuItem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -550,7 +552,7 @@
             this.toolStripMenuFlagForm.Image = global::AOG.Properties.Resources.FileEditName;
             this.toolStripMenuFlagForm.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.toolStripMenuFlagForm.Name = "toolStripMenuFlagForm";
-            this.toolStripMenuFlagForm.Size = new System.Drawing.Size(267, 70);
+            this.toolStripMenuFlagForm.Size = new System.Drawing.Size(228, 70);
             this.toolStripMenuFlagForm.Text = "toolStripMenuItem3";
             this.toolStripMenuFlagForm.Click += new System.EventHandler(this.toolStripMenuFlagForm_Click);
             // 
@@ -2715,6 +2717,13 @@
             this.lblFlowHz_Nozz.Text = "Hz";
             this.lblFlowHz_Nozz.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // agShareToolStripMenuItem
+            // 
+            this.agShareToolStripMenuItem.Name = "agShareToolStripMenuItem";
+            this.agShareToolStripMenuItem.Size = new System.Drawing.Size(382, 50);
+            this.agShareToolStripMenuItem.Text = "AgShare Setup";
+            this.agShareToolStripMenuItem.Click += new System.EventHandler(this.agShareToolStripMenuItem_Click);
+            // 
             // FormGPS
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
@@ -2936,6 +2945,7 @@
         public System.Windows.Forms.ToolStripDropDownButton toolStripBtnFieldTools;
         private System.Windows.Forms.Label lblPWM_Nozz;
         private System.Windows.Forms.Label lblFlowHz_Nozz;
+        private System.Windows.Forms.ToolStripMenuItem agShareToolStripMenuItem;
     }
 }
 
