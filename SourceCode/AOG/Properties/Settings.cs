@@ -132,6 +132,8 @@ namespace AOG
             public bool sound_isUturnOn = true;
 
             public string hotkeys = "ACFGMNPTYVW12345678";
+            public string AgShareServer = "https://agshare.agopengps.com";
+            public string AgShareApiKey = "";
 
             public LoadResult Load()
             {
